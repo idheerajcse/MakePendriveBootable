@@ -1,0 +1,75 @@
+Convert Pen Drive as Bootable Device using cmd in Windows 10 / 8
+By: Suresh Dasari May 22, 2016
+Categories: General , windows 10 , Windows 8
+ 
+ 
+Introduction: 
+
+Here I will explain how to convert pen drive into bootable device using cmd in windows 10 or convert pen drive as bootable using cmd in windows 10 or how to make pen drive bootable using windows command prompt in windows 10 or create bootable usd drive using cmd in windows 10. We can make pen drive bootable using cmd for windows 8 / windows 10 easily.  
+
+Description: 
+   
+In previous articles I explained how to fix blurry font for windows 10, excel find and highlight duplicate columns, keyboard keyboard shortcut key codes, compare two columns values and show duplicate values in excel, create desktop shortcut key to lock computer, configure dns server in windows 7. Now I will explain how to make pend drive as bootable device using cmd (command prompt).
+
+Recently I tried to format my system to install new Windows OS but in my laptop CD/DVD drive is not working properly. So I thought it's better to make pen drive as bootable device to format my system to install new software.
+
+If you are using Windows 7 or 8 or 10 it's very easy to convert pen drive as bootable device / flash drive with few lines of code in command prompt. we don't need any other software to convert pen drive as bootable / flash drive.
+
+To convert pen drive as bootable device just follow below steps.
+
+Open command prompt by typing cmd in search and right click run as administrator like as shown below
+
+
+
+It will open command prompt in that type “Diskpart” and hit “Enter” button that would be like as shown below
+
+
+
+Now connect your pen drive (minimum size 4GB) to convert bootable device before that save all the data in pen drive because we are going to format pen drive and use that device completely for bootable.
+
+Once you connect pen drive now type “List Disk” in command prompt and click “Enter” button like as shown below
+
+
+
+
+ 
+
+Here it will show all the connected disks Disk 0, Disk 1 and Disk 2 to the system with size and status. Here Disk 0 will be a system disk and Disk 2 will be pen drive. Now we are going to make Disk 2 (Pen Drive) as bootable device.
+
+Now type “Select Disk 2” in command prompt and click enter button. It will select “Disk 2” pen drive for further steps.
+
+
+
+Now type “Clean” and click enter to clean data from pen drive like as shown below
+
+
+
+Now type “Create partition Primary” and click enter to create partition primary in pen drive like as shown below
+
+
+
+Now type “Select Partition 1” and click enter to select partition created in previous step like as shown below.
+
+
+
+Now type “format = fs ntfs quick” and click enter button to format pen drive with NTFS file type like as shown below.
+
+
+
+Now type “active” and click enter button to make partition active for booting while restarting system. In case if we miss this step computer will not boot from pen drive.
+
+
+
+Now type “exit” and click enter button to close the diskpart from command prompt like as shown below.
+
+
+
+Now our pen drive become bootable device. Now copy all your OS setup files from your DVD or ISO and paste inside pen drive like as shown below.
+
+
+
+After completion of copying all the files to pen drive now we can use this pen drive as bootable for windows 7 or 8 or 10.
+
+Now “Restart” your computer and while starting press “F12” to enter into boot options. It will show options to boot from “CD / DVD Drive, Hard Disk and Pen Drive”. Just select Pen Drive and click enter button it will boot from pen drive to install your OS.
+
+I hope it helps you to convert your pen drive as bootable device.
